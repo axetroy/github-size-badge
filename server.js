@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const github = require('./lib/github');
+// const github = require('./lib/github');
 
 app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
