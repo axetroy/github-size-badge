@@ -21,15 +21,15 @@ app.get('/:owner/:repo.svg', function(req, res) {
   // const owner = req.params.owner;
   // const repo = req.params.repo;
   const {owner,repo} = req.params
-  res.send('hello world' + owner + repo)
-  // github
-  //   .get(`/repos/${owner}/${repo}`)
-  //   .then(function(response) {
-  //     res.status(200).send(`hello ${owner}, repo: ${repo}`);
-  //   })
-  //   .catch(function() {
-  //     res.status(200).send(`hello ${owner}, repo: ${repo} fail`);
-  //   });
+  // res.send('hello world' + owner + repo)
+  github
+    .get(`/repos/${owner}/${repo}`)
+    .then(function(response) {
+      res.status(200).send(`hello ${owner}, repo: ${repo}`);
+    })
+    .catch(function() {
+      res.status(200).send(`hello ${owner}, repo: ${repo} fail`);
+    });
 });
 
 app.listen(PORT, function() {
