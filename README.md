@@ -16,7 +16,8 @@ Provide service for show your repo size.
 ![Size](https://github-size-badge.herokuapp.com/:owner/:repo.svg)
 ```
 
-Add to your README.md and you will see this: 
+Add to your README.md and you will see badge like this: 
+
 ![Size](https://github-size-badge.herokuapp.com/axetroy/github-size-badge.svg)
 
 ## Contributing
