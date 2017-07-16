@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "keywords": ["github", "badge", "size"],
+  "keywords": [
+    "github",
+    "badge",
+    "size"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ava",
     "start": "node server.js"
   },
   "repository": {
@@ -23,5 +27,8 @@
     "axios-retry": "^2.0.1",
     "express": "^4.15.3",
     "pretty-bytes": "^4.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0"
   }
 }
