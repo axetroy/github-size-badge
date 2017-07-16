@@ -15,6 +15,10 @@ app.get('/', function(req, res) {
   res.send('Hello World.');
 });
 
+app.get('/:owner/:repo.svg', function(req, res) {
+  res.send('you gonna get svg')
+});
+
 app.listen(PORT, function() {
   console.log(`Listen the port: ${PORT}`);
 });
