@@ -33,6 +33,9 @@ app.use(function(req, res, next) {
 app.get('/:owner/:repo.svg', function(req, res) {
   const { owner, repo } = req.params;
   res.header('Content-Type', 'image/svg+xml;charset=utf-8');
+  res.header('Cache-Control', 'no-cache, no-store, must-revalidate');
+  res.header('Pragma', 'no-cache');
+  res.header('Expires', 0);
   http
     .get(`https://api.github.com/repos/${owner}/${repo}`)
     .then(function(response) {
