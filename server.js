@@ -55,6 +55,7 @@ app.get('/', function(req, res) {
 
 app.get('/:owner/:repo.svg', function(req, res) {
   const { owner, repo } = req.params;
+  res.header('Content-Type', 'image/svg+xml;charset=utf-8');
   http
     .get(`https://api.github.com/repos/${owner}/${repo}`)
     .then(function(response) {
