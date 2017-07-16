@@ -1,5 +1,5 @@
 {
-  "name": "email-service",
+  "name": "github-size-badge",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axetroy/email-service.git"
+    "url": "git+https://github.com/axetroy/github-size-badge.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/axetroy/email-service/issues"
+    "url": "https://github.com/axetroy/github-size-badge/issues"
   },
-  "homepage": "https://github.com/axetroy/email-service#readme",
+  "homepage": "https://github.com/axetroy/github-size-badge#readme",
   "dependencies": {
     "axios": "^0.16.2",
     "axios-retry": "^2.0.1",
