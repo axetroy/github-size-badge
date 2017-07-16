@@ -17,11 +17,11 @@ const http = axios.create({
   timeout: 1000 * 10,
   params: {
     client_id: CONFIG.github_client_id,
-    client_secret: CONFIG.github_client_secret
+    client_secret: CONFIG.github_client_secret,
   },
   withCredentials: false,
   responseType: 'json',
-  headers: { Accept: 'application/json;charset=utf-8' }
+  headers: { Accept: 'application/json;charset=utf-8' },
 });
 
 app.use(function(req, res, next) {
