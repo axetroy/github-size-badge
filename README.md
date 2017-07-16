@@ -1,4 +1,6 @@
 # github-oauth-serve
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/github-size-badge.svg)](https://greenkeeper.io/)
 用来验证Github的oauth的服务端
 
 验证地址``/oauth?code=:code``
