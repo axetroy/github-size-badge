@@ -1,0 +1,30 @@
+{
+  "name": "@axetroy/github-oauth-serve",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.10.0",
+    "npm": "4.4.1"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axetroy/github-oauth-serve.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axetroy/github-oauth-serve/issues"
+  },
+  "homepage": "https://github.com/axetroy/github-oauth-serve#readme",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "axios-retry": "^2.0.1",
+    "express": "^4.15.2",
+    "pretty-bytes": "^4.0.2"
+  }
+}
