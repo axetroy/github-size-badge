@@ -18,9 +18,9 @@ app.get('/', function(req, res) {
 });
 
 app.get('/:owner/:repo.svg', function(req, res) {
-  const owner = req.param.params.owner;
-  const repo = req.param.params.repo;
-  res.send('hello world')
+  const owner = req.param.owner;
+  const repo = req.param.repo;
+  res.send('hello world' + owner + repo)
   // github
   //   .get(`/repos/${owner}/${repo}`)
   //   .then(function(response) {
