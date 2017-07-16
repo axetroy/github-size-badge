@@ -5,7 +5,8 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const github = require('./lib/github');
+const axios = require('axios');
+// const github = require('./lib/github');
 
 app.use(function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
@@ -18,16 +19,14 @@ app.get('/', function(req, res) {
 });
 
 app.get('/:owner/:repo.svg', function(req, res) {
-  // const owner = req.params.owner;
-  // const repo = req.params.repo;
-  const {owner,repo} = req.params
-  // res.send('hello world' + owner + repo)
-  github
-    .get(`/repos/${owner}/${repo}`)
+  const { owner, repo } = req.params;
+  axios
+    .get(`https://api.github.com/repos/${owner}/${repo}`)
     .then(function(response) {
-      res.status(200).send(`hello ${owner}, repo: ${repo}`);
+      console.log(response.data);
+      res.status(200).send(`hello ${owner}, repo: ${repo}` + JSON.stringify(response.data));
     })
-    .catch(function() {
+    .catch(function(err) {
       res.status(200).send(`hello ${owner}, repo: ${repo} fail`);
     });
 });
