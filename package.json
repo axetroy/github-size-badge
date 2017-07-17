@@ -1,30 +1,34 @@
 {
-  "name": "@axetroy/github-oauth-serve",
-  "version": "1.0.0",
-  "engines": {
-    "node": "6.10.0",
-    "npm": "4.4.1"
-  },
+  "name": "github-size-badge",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "keywords": [
+    "github",
+    "badge",
+    "size"
+  ],
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axetroy/github-oauth-serve.git"
+    "url": "git+https://github.com/axetroy/github-size-badge.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/axetroy/github-oauth-serve/issues"
+    "url": "https://github.com/axetroy/github-size-badge/issues"
   },
-  "homepage": "https://github.com/axetroy/github-oauth-serve#readme",
+  "homepage": "https://github.com/axetroy/github-size-badge#readme",
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.16.2",
     "axios-retry": "^2.0.1",
-    "express": "^4.15.2",
+    "express": "^4.15.3",
     "pretty-bytes": "^4.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0"
   }
 }
