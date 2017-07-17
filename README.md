@@ -1,5 +1,6 @@
 # github-size-badge
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/github-size-badge.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/axetroy/github-size-badge.svg?branch=master)](https://travis-ci.org/axetroy/github-size-badge)
 [![Dependency](https://david-dm.org/axetroy/github-size-badge.svg)](https://david-dm.org/axetroy/github-size-badge)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
